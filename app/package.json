@@ -1,0 +1,15 @@
+{
+  "name": "jncc-meso",
+  "version": "1.0.0",
+  "description": "A Bayesian Belief Network to estimate the impacts of pressure of marine environments",
+  "dependencies": {
+    "electron": "^4.1.4",
+    "orca": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AVS Developments Ltd",
+  "license": "MIT"
+}

@@ -23,7 +23,7 @@
 - vizNetwork
 - zip
 ```
-install.packages(c("bnlearn", "DT", "ggplot2", "graph", "htmltools", "kableExtra", "knitr", "magrittr", "openxlsx", "plotly", "processx", "RColorBrewer", "shiny", "shinyBS", "shinycssloaders", "shinydashboard", "shinydashboardPlus", "shinyjs", "stringr", "vizNetwork", "zip", "devtools"))
+install.packages(c("bnlearn", "DT", "ggplot2", "graph", "htmltools", "kableExtra", "knitr", "magrittr", "openxlsx", "plotly", "processx", "RColorBrewer", "shiny", "shinyBS", "shinycssloaders", "shinydashboard", "shinydashboardPlus", "shinyjs", "stringr", "visNetwork", "zip", "devtools", "modules","plyr"))
 devtools::install_github("ropensci/plotly")
 ```
 

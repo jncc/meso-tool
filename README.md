@@ -1,6 +1,10 @@
 # meso-tool
 MESO Shiny app
 
+A Proof of Concept visualisation tool to assist in understanding the probabilitic impact that Anthropogenic Pressures (i.e. human activities) has on the habitats of sub-littoral areas of the United Kingdom.
+
+The tool provides a mapping using a Continuous Gaussian Bayesian Belief Network from the Anthropogenic Pressures through the biotopes and to the output processes and ultimately the Ecosystem services, to which the habitat supports.
+
 # Build the docker container
 ```
 docker build -t jncc/meso-tool

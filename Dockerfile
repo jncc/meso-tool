@@ -20,7 +20,9 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get install -y nodejs
 
 # Install R packages that are required!
-RUN R -e "install.packages(c('bnlearn', 'DT', 'ggplot2', 'graph', 'htmltools', 'kableExtra', 'knitr', 'magrittr', 'openxlsx', 'plotly', 'processx', 'RColorBrewer', 'shiny', 'shinyBS', 'shinycssloaders', 'shinydashboard', 'shinydashboardPlus', 'shinyjs', 'stringr', 'visNetwork', 'zip', 'devtools', 'modules','plyr'))"
+RUN R -e "install.packages(c('BiocManager', 'bnlearn', 'DT', 'ggplot2', 'htmltools', 'kableExtra', 'knitr', 'magrittr', 'openxlsx', 'plotly', 'processx', 'RColorBrewer', 'shiny', 'shinyBS', 'shinycssloaders', 'shinydashboard', 'shinydashboardPlus', 'shinyjs', 'stringr', 'visNetwork', 'zip', 'devtools', 'modules','plyr'))"
+# Install graph package (because it's in BiocManager, not in the default repo)
+RUN R -e "BiocManager::install('graph')"
 
 # Copy configuration files into the Docker image
 COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf

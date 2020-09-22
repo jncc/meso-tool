@@ -1,2 +1,6 @@
-*/.Rhistory
-*/.RData
+.Rhistory
+.RData
+app/packrat/lib*/
+app/packrat/src/
+rsconnect
+.Rproj.user

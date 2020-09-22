@@ -15,7 +15,7 @@ docker build . -t jncc/meso-tool
 # Run the app
 ```
 
-docker run -p 3838:3838 -p 8787:8787 -t jncc/meso-tool
+docker run --user shiny -p 3838:3838 -p 8787:8787 -t jncc/meso-tool
 
 ```
 

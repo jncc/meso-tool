@@ -7,7 +7,7 @@ The tool provides a mapping using a Continuous Gaussian Bayesian Belief Network 
 
 # Build the docker container
 ```
-docker build -t jncc/meso-tool .
+docker build -t jncc/meso-tool
 ```
 
 # Run the app

@@ -30,15 +30,17 @@ COPY /app /srv/shiny-server
 
 # Install npm modules
 WORKDIR /srv/shiny-server
-RUN npm install 
+RUN npm install
+
+RUN mkdir -p /var/log/shiny-server
+RUN chown shiny.shiny /var/log/shiny-server
+
+RUN chown -R shiny.shiny /srv/shiny-server
+
+RUN chmod 755 /srv/shiny-server
 
 # Make the ShinyApp available at port 3838
 EXPOSE 3838
 EXPOSE 8787
 
-# Copy further configuration files into the Docker image
-COPY shiny-server.sh /usr/bin/shiny-server.sh
-
-RUN ["chmod", "+x", "/usr/bin/shiny-server.sh"]
-
-CMD ["/usr/bin/shiny-server.sh"]
+CMD ["shiny-server"]

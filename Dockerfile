@@ -43,4 +43,6 @@ RUN chmod 755 /srv/shiny-server
 EXPOSE 3838
 EXPOSE 8787
 
+# Run as shiny
+USER shiny
 CMD ["shiny-server"]

@@ -12,7 +12,7 @@ The tool provides a mapping using a Continuous Gaussian Bayesian Belief Network 
 
 ## Run the app
 
-    docker run --user shiny -p 3838:3838 -p 8787:8787 -t meso-shiny
+    docker run -p 3838:3838 -p 8787:8787 -t meso-shiny
 
 It may take a few seconds for the app to start up
 
@@ -30,7 +30,7 @@ Activate your credentials in aws-vault
 
 Get login
 
-    ${aws ecr get-login --region eu-west-2 --no-include-email}
+    $(aws ecr get-login --region eu-west-2 --no-include-email)
 
 Push image
 

@@ -12,7 +12,7 @@ The tool provides a mapping using a Continuous Gaussian Bayesian Belief Network 
 
 ## Run the app
 
-    docker run -p 3838:3838 -p 8787:8787 -t meso-shiny
+    docker run -p 3838:3838 -t meso-shiny
 
 It may take a few seconds for the app to start up
 

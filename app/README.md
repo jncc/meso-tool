@@ -52,5 +52,5 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=/srv/shiny/bin:$PATH
 
-screen -dmS MESO R --vanilla -e "shiny::runApp('app.R', host = '0.0.0.0', port = 6376)"
+screen -dmS MESO R --vanilla -e "shiny::runApp('app.R', host = '0.0.0.0', port = 3838)"
 ```

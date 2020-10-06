@@ -41,7 +41,6 @@ RUN chmod 755 /srv/shiny-server
 
 # Make the ShinyApp available at port 3838
 EXPOSE 3838
-EXPOSE 8787
 
 # Run as shiny
 USER shiny

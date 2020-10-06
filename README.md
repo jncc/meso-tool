@@ -24,14 +24,4 @@ You should see some output in the console like the following:
 
 Navigate to http://localhost:3838
 
-## Push to AWS ECR
 
-Activate your credentials in aws-vault
-
-Get login
-
-    $(aws ecr get-login --region eu-west-2 --no-include-email)
-
-Push image
-
-    docker push <account no>.dkr.ecr.eu-west-2.amazonaws.com/meso-shiny

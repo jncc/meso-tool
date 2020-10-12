@@ -35,6 +35,13 @@ RUN chown -R shiny.shiny /srv/shiny-server
 
 RUN chmod 755 /srv/shiny-server
 
+# Deal with data updates here
+
+COPY /data /srv/shiny-server/data
+RUN chown -R shiny.shiny /srv/shiny-server/data
+RUN chmod 755 /srv/shiny-server/data
+
+
 # Make the ShinyApp available at port 3838
 EXPOSE 3838
 

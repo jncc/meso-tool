@@ -23,5 +23,3 @@ You should see some output in the console like the following:
     [2020-06-01T12:20:00.354] [INFO] shiny-server - Starting listener on http://[::]:3838
 
 Navigate to http://localhost:3838
-
-

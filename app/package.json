@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A Bayesian Belief Network to estimate the impacts of pressure of marine environments",
   "dependencies": {
-    "electron": "^7.2.4",
+    "electron": "^11.5.0",
     "orca": "^1.2.1"
   },
   "devDependencies": {},
